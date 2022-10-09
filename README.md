@@ -20,3 +20,9 @@ A simple command line tool to search on json file.
     - That's it
 - To Run the test `pytest`
 - To check the test coverage `pytest --cov`
+
+```
+Images for Quick look
+```
+![](images/cli-search.png)
+![](images/cli-column-list.png)
