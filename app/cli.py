@@ -44,7 +44,6 @@ class SearchCommandLineInterface(Base):
                     self.display_data_in_tabular_form_for_search(
                         filtered_dict, selected_file
                     )
-                    return filtered_dict
                 else:
                     schema = self.get_schema(selected_file)
                     self.display_data_in_tabular_form_for_columns(schema, selected_file)

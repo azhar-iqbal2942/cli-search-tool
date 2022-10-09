@@ -10,7 +10,7 @@ def test_search_with_user_file_and_id_column(monkeypatch: MonkeyPatch) -> None:
     instance = SearchCommandLineInterface()
     resp = instance.search()
 
-    assert len(resp) == 1  # type: ignore
+    assert resp == None
 
 
 def test_search_with_user_file_and_tags_column(monkeypatch: MonkeyPatch) -> None:
@@ -20,7 +20,7 @@ def test_search_with_user_file_and_tags_column(monkeypatch: MonkeyPatch) -> None
     instance = SearchCommandLineInterface()
     resp = instance.search()
 
-    assert len(resp) == 1  # type: ignore
+    assert resp == None
 
 
 def test_search_with_user_file_and_shared_column(monkeypatch: MonkeyPatch) -> None:
@@ -30,7 +30,7 @@ def test_search_with_user_file_and_shared_column(monkeypatch: MonkeyPatch) -> No
     instance = SearchCommandLineInterface()
     resp = instance.search()
 
-    assert len(resp) == 28  # type: ignore
+    assert resp == None
 
 
 def test_search_with_user_file_and_invalid_id(monkeypatch: MonkeyPatch) -> None:
@@ -40,4 +40,4 @@ def test_search_with_user_file_and_invalid_id(monkeypatch: MonkeyPatch) -> None:
     instance = SearchCommandLineInterface()
     resp = instance.search()
 
-    assert len(resp) == 0  # type: ignore
+    assert resp == None
